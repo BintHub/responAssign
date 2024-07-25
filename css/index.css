@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(236, 234, 234);
+}
+.services{
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    max-width: 1066px;
+    min-height: 373px;
+    margin-top: 50px;
+    padding: 10px;
+    padding-left: 4rem;
+}
+.firstli{
+    display:flex;
+    width: 1099px;
+    min-height: 177px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+.firstli .firstbox{
+    background-image: url(/img/destool.png);
+    background-repeat:no-repeat;
+    width: 516px;
+    height: 177px;
+    left: 404px;
+} 
+.firstli .secondbox{
+    background-image: url(/img/devtool.png);
+    background-repeat: no-repeat;
+    width: 483px;
+    height: 177px;
+    left: 987px;
+}
+.thirdbox{
+    background-image: url(/img/maintool.png);
+    background-repeat: no-repeat;
+    background-position:top left;
+    width: 487px;
+    height:182px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.services h3{
+    font-family:"Montserrat", sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    letter-spacing:5px;
+    width: 277px;
+    height: 44px;
+    margin:5px;
+    padding: 10px;
+}
+.firstbox h3{
+ padding-right:8rem;
+}
+.services p{
+    font-family: "Open Sans",sans-serif;
+    font-size: 0.87em;
+    font-weight: 300;
+    text-align: justified;
+    width: 422px;
+    height: 104px;
+    padding-left:10px;
+    margin: 10px;
+}
+.seperator{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;  
+}
+.main{
+    min-height:100vh;
+   text-align: center;
+}
+.work{
+    padding-top:10%;
+    padding-bottom: 5%;
+    padding-left:35%;
+}
+.work h2{
+    font-family:"Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: center;
+    width: 404px;
+    height: 90px;
+    border: 6px solid black;
+    padding-top:1.3rem;
+}
+.logos{
+    padding-left: 15rem;
+    margin-top: 2em;
+}
+.logos h3{
+    width: 261px;
+    height: 74px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 36.57px;
+    letter-spacing: 0.1854em;
+    text-align: right;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    padding: 12rem;
+    padding-top:0;
+    margin-top: 5rem;
+}
+.box1{
+    margin-bottom: 3rem;
+}
+.box1 img{
+    margin-bottom: 1.2rem;
+}
+.box1 h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.26px;
+    letter-spacing: 0.1354em;
+    max-width: 240px;
+    min-height: 52px;
+
+}
+
+
+/*mobile view*/
+
+@media (max-width:400px){
+    .services p{
+        font-size:1.2em;
+    }
+    .services .firstli{
+        display:block;
+        width:100%;
+    }
+    .firstli .firstbox{
+       margin-bottom: 5rem;
+    }
+    .firstli .secondbox{
+       margin-bottom: 2rem;
+    }
+    .thirdbox{
+       margin-bottom: 7rem;
+    }
+    .seperator{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        padding-left: 40%;
+      
+    }
+    .container{
+        display: block;
+        align-items: center;
+    }
+    .work h2{
+        width: 300px;
+        height: 130px;
+        border: 15px solid black;
+        margin-top:8rem;
+        padding-top: 2rem;
+    }
+    .logos{
+        margin-top: 6rem;
+        padding-left: 2rem;
+        padding-bottom: 3rem;
+        width:100%
+    }
+    .logos h3{
+        font-size: 30px;
+        font-weight: 700;
+        text-align:center;
+    }
+}
